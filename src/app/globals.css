@@ -1,4 +1,8 @@
+/* === Font variables fallback for Mantine === */
 :root {
+  --font-geist-sans: 'Geist', sans-serif;
+  --font-geist-mono: 'Geist Mono', monospace;
+
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -19,7 +23,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, sans-serif; /* ✅ Dùng font biến */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -40,3 +44,4 @@ a {
     color-scheme: dark;
   }
 }
+
